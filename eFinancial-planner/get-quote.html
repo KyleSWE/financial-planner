@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------------------------------[* BOOTSTRAP + STYLES.CSS *]----------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Quote</title>
+</head>
+<body>
+    <section class="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h1>let's get you covered</h1>
+            </div>
+                <!------------------[container]--------------------->
+            <div class="row justify-content-center my-5">
+
+                <!------------------[form box]--------------------->
+                <div class="col-md-6">
+
+                    <!------------------[form]--------------------->
+                    <form onsubmit= "buttonClick()" action="get-quote.html" id="the-form" method="GET">
+                        <!------------------[name label]--------------------->
+                        <label for="name" id= "name">Name:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text"><img src="images/person-lines-fill.svg" alt=""></span>
+                            <input class="form-control" type="text" name="iName" id="iName" placeholder="name...">
+                        </div>
+                
+                        <!------------------[savings label]--------------------->
+                        <label for="savings" id="savings">Savings:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text"><img src="images/coin.svg" alt=""></span>
+                            <input class="form-control" type="text" name="iSaving" id="iSaving" placeholder="savings...">
+                        </div>
+                            
+                        <!------------------[years label]--------------------->
+                        <label for="years" id="years">Years</label>
+                        <div class="mb-4 input-group"><span class="input-group-text"><img src="images/alarm.svg" alt=""></span>
+                            <input class="form-control" type="text" name="iYear" id="iYear" placeholder="years...">
+                        </div>
+                            
+                        <!------------------[submit button]--------------------->
+                        <button type="submit" value="submit" class="btn btn-secondary">get quote</button>
+                    </form>
+                    </form><!------------------[end form]--------------------->
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------------[*  JAVASCRIPT *]----------------------------------------------->
+    <script src="script.js"></script>
+</body>
+</html>

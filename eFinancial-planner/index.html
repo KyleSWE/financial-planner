@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------------------------------[* BOOTSTRAP + STYLES.CSS *]----------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <!---------------------------------------------[* NAVIGATION BAR *]----------------------------------------------->
+    <nav class="navbar row mb-4">
+        <h1 class="col-4">Finance NYC</h1>
+        <div class="col-2 logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="col-3 justify-end d-none d-lg-block"><div class="input-group">
+            <input type="search" class="form-control rounded" placeholder="Search..." aria-label="Search"
+              aria-describedby="search-addon" />
+            <button type="button" class="btn btn-primary">search</button>
+          </div>
+        </div>
+      </nav>
+    <!---------------------------------------------[* ROW 1 *]----------------------------------------------->
+            <div class="row p-5 border-top border-5 row-1">
+                <div class="col d-none d-lg-block">
+                    <img src="images/school.jpg" alt="">
+                </div>
+                <div class="col text-bloc">
+                    <h1>Open your <span>BOOKS.</span></h1><h1><span>CLOSE</span> your wallet.</h1>
+                    <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">BEGIN</button>
+                </div>
+            </div>
+    <!---------------------------------------------[* ROW 2 *]----------------------------------------------->
+    <div class="row p-5 border-top border-5 row-2">
+        <div class="col text-bloc">
+            <h1><span>YOU</span> find the house.</h1><h1>We'll <span>HELP</span> unpack.</h1>
+            <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">BEGIN</button>
+        </div>
+        <div class="col d-none d-lg-block">
+            <img src="images/home.jpg" alt="">
+        </div>
+    </div>
+    <!---------------------------------------------[* ROW 3 *]----------------------------------------------->
+    <div class="row p-5 border-top border-5 row-3">
+        <div class="col d-none d-lg-block">
+            <img src="images/retire.jpg" alt="">
+        </div>
+        <div class="col text-bloc">
+            <h1>Work hard.<Span> PLAY</Span> harder.</h1><h1><span>WE</span> can take it from here.</h1>
+            <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">BEGIN</button>
+        </div>
+    </div>
+    <!------------------------------------------[* PRICE MODAL]-------------------------------------------->
+    <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body">
+                <!------------------[form]--------------------->
+                <form onsubmit= "buttonClick()" action="get-quote.html" id="the-form" method="GET">
+                    <!------------------[name label]--------------------->
+                    <label for="name" id= "name">Name:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text"><img src="images/person-lines-fill.svg" alt=""></span>
+                        <input class="form-control" type="text" name="iName" id="iName" placeholder="Enter name...">
+                    </div>
+            
+                    <!------------------[savings label]--------------------->
+                    <label for="savings" id="savings">Savings:</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><img src="images/coin.svg" alt=""></span>
+                        <input class="form-control" type="text" name="iSaving" id="iSaving" placeholder="Enter savings...">
+                    </div>
+                        
+                    <!------------------[years label]--------------------->
+                    <label for="years" id="years">Years:</label>
+                    <div class="mb-4 input-group"><span class="input-group-text"><img src="images/alarm.svg" alt=""></span>
+                        <input class="form-control" type="text" name="iYear" id="iYear" placeholder="Enter years...">
+                    </div>
+                        
+                    <!------------------[submit button]--------------------->
+                    <button type="submit" value="submit" class="btn btn-success">start saving</button>
+                </form>
+                </form><!------------------[end form]--------------------->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!---------------------------------------------[* FOOTER 1 *]----------------------------------------------->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="#" role="button">
+                Facebook</a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="#" role="button">
+                Twitter</a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="#" role="button">
+                Instagram</a>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/kylereed-swe/" role="button">LinkedIn</a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/KyleSWE?tab=repositories" role="button">
+                Github</a>
+          </section>
+        </div>
+      
+        <div class="text-center" style="background-color: bg-dark">
+          © 2021 Copyright:
+          <a class="text-white" target="_blank" href="https://github.com/KyleSWE?tab=repositories">Finance NYC</a>
+        </div>
+      </footer>
+    
+    <!---------------------------------------------[*  JAVASCRIPT *]----------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    border: solid red;
+    background: #ffffff
+    
+}
+.container{
+    border: solid red;
+}
+
+.navbar{
+    background-color: #394f95
+}
+
+.navbar logo {
+    align-content: center;
+}
+.row-1{
+    background-color: #b5d3e0;
+}
+
+.row-2{
+    background-color: #a5e4ff;
+}
+
+.row-3{
+    background-color: #b9c4c9;
+}
+
+.navbar h1 {
+    color: whitesmoke;
+    font-family: Lucida Console;
+}
+
+.logo img {
+    width: 60px;
+    height: 50px;
+}
+.text-bloc {
+    text-align: center;
+    padding-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.modal-body{
+    background-color: #b9c4c9;
+}
+
+.modal-header{
+    background-color: #394f95;
+}
+.modal-footer{
+    background-color: #394f95;
+}
